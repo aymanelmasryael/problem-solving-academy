@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEL Academy — Learn Problem Solving Masterclass</title>
+    <link rel="icon" href="ael-logo.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="app-header">
+        <div class="header-content">
+            <img src="ael-logo.svg" alt="AEL Logo" class="ael-logo">
+            <div class="header-titles">
+                <h1><span class="ael-text">AEL Academy</span> <span class="bible-text">Problem Solving Masterclass</span></h1>
+                <p class="header-subtitle">256 Modules — C# & Unity Game Dev Focus</p>
+            </div>
+        </div>
+        <div class="header-actions">
+            <button id="show-bookmarks-btn" class="nav-btn">🔖 Bookmarks (<span id="bookmark-count">0</span>)</button>
+            <div class="header-stats">
+                <span id="stat-prompts">0</span> Scenarios
+            </div>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <!-- SIDEBAR FILTERS -->
+        <aside class="sidebar-filters">
+            <h3>Filters</h3>
+            
+            <div class="filter-group">
+                <label>Keyword Search</label>
+                <input type="text" id="search-input" placeholder="Search NullReferenceException, Inventory, etc...">
+            </div>
+
+            <div class="filter-group">
+                <label>Difficulty</label>
+                <select id="filter-difficulty">
+                    <option value="All">All Levels</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                    <option value="Expert">Expert</option>
+                    <option value="Interview">Interview</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Question Type</label>
+                <select id="filter-type">
+                    <option value="All">All Types</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>System / Topic Tags</label>
+                <div id="filter-tags" class="tags-container">
+                    <!-- Injected dynamically -->
+                </div>
+            </div>
+
+            <button id="reset-filters" class="reset-btn">Reset Filters</button>
+        </aside>
+
+        <!-- MAIN CONTAINER -->
+        <main class="main-container">
+            <div class="content-header">
+                <h2 id="current-view-title">All Scenarios</h2>
+                <div class="global-actions">
+                    <button id="expand-all">Expand All</button>
+                    <button id="collapse-all">Collapse All</button>
+                </div>
+            </div>
+
+            <div id="content-area" class="qa-grid">
+                <!-- Injected by JS -->
+            </div>
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="app-footer">
+        <p>© 2026 Ayman Elmasry — AEL Digital Studio</p>
+        <p class="footer-sub">AEL Vision Framework v2.2 — Academy Q&A Specification v1.0</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
