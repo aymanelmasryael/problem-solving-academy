@@ -6,6 +6,15 @@
 
 An interactive, zero-dependency Q&A browser for C# and Unity game development problem-solving scenarios. Built with vanilla HTML, CSS, and JavaScript.
 
+## 📚 Learning Metadata
+
+| | |
+|---|---|
+| **Learning Level** | Intermediate (Pre-release scaffold) |
+| **Estimated Duration** | Self-paced (256 problem-solving modules) |
+| **Prerequisites** | C# and Unity basics |
+| **Learning Outcomes** | Practice game development problem-solving across 256 modules, filter by difficulty, track with bookmarks |
+
 ---
 
 ## Overview
